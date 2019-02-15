@@ -140,7 +140,7 @@ if(vw>=660){
     {
        // Android.showToast("enviarmsnya",tstxmsn,telefonos[i]);
 
-        console.log(i+":  "+ telefonos[i]);
+       // console.log(i+":  "+ telefonos[i]);
     }
     alert("no se  envio el mensaje, consulte  3138640961");
     }
@@ -148,13 +148,15 @@ if(vw>=660){
 
  else{
     vllamar=true;
-     for(var i  in  eljs){
-stacu=stacu+eljs[i].telefono
-//console.log(eljs[i].telefono);
-llamar(String(msnfire),eljs[i].telefono);
+   
 
+for(var i in telefonos)
+{stacu=telefonos[i];
+ // Android.showToast("enviarmsnya",tstxmsn,telefonos[i]);
+  document.getElementById("idpmsn").innerHTML=telefonos[i]+ "  "+msnfire+"<br>";
+console.log("tel "+telefonos[i]);
 }
-document.getElementById("idpmsn").innerHTML=stacu+"<br>"+ msnfire;
+
 
 
 
@@ -165,14 +167,14 @@ var stacu="";
 
 
     function llamar(tstxmsn,telnum){
-
+/*
 
         for(var i in telefonos)
     {
       Android.showToast("enviarmsnya",tstxmsn,telefonos[i]);
 
         //console.log(i+":  "+ telefonos[i]);
-    }
+    }*/
 
 //Android.showToast("enviarmsnya",tstxmsn,telnum);
         if(true){
@@ -188,7 +190,7 @@ var stacu="";
 
     }
     
-    document.getElementById("idpmsn").innerHTML=1234;
+   // document.getElementById("idpmsn").innerHTML=1234;
     </script>
 
 
