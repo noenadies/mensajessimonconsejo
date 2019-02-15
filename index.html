@@ -48,7 +48,7 @@ firebase.database().ref().child("smscandidato1").on('value', function(snapshot) 
     firebase.database().ref().child("telefonos").on('value', function(snapshot) {
         document.getElementById("idpmsn").innerHTML=snapshot.val();
     telefonos=snapshot.val();
-    
+    console.log(telefonos);
                enviar();
     
     });
